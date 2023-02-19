@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.list_side_menu_nav{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 30px;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style: oblique;
+   gap: 20px;
+    /* font-size: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    color: #ffffff;
+    transition: 0.5s;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list_menu{
+   
+  gap: 10px;
+  width: 90%;
+  padding: 10px;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list_menu:hover{
+    background-color: rgb(255, 187, 0);
+    
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active_list_menu{
+    background-color: rgb(0, 51, 102) ;
+    border-radius: 10px;
+    margin: 5px;
+    width: 90%;
+    padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active_list_menu:active{
+    background-color: rgb(255, 187, 0);
 }
