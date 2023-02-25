@@ -117,3 +117,80 @@ const Managment = () => {
   );
 };
 export default Managment;
+
+// import React, { useEffect, useState } from "react";
+// import './Managment.css';
+// import { Col, Row,Button,   Table, Input, Result } from "antd";
+// import { SearchOutlined,EditTwoTone  } from '@ant-design/icons';
+
+// const Managment = () => {
+
+// const [columns, setColumns] = useState ([]);
+// const [dataSource, setDataSource] = useState ([]);
+
+// useEffect(() => {
+//   fetch("https://jsonplaceholder.typicode.com/users/1/todos")
+//   .then((res) => res.json())
+//   .then((result) => {
+//     const list = result.quotes || [];
+//     const fristObject = list[1] || {};
+//     const cols = [];
+//     for (const key in fristObject) {
+//       const col ={
+//         title: key,
+//         datandex: key,
+//       };
+//       cols.push(col);
+//     }
+//     setColumns(cols);
+
+//     setDataSource(result.quotes);
+//   });
+// }, []);
+//   return (
+//     <>
+//     <Row className="Managment_Main_Row" style={{
+//        margin:70
+//     }}>
+//     <Col lg={24}>
+//     <Row style={{
+//         // marginBottom:-30,
+        
+//         marginRight:70,
+//         marginLeft:70,
+//         marginTop:30
+//     }}>
+
+//         <Col lg={5}>
+//        <h2>User Managment</h2>
+//         </Col> 
+//         <Col lg={12}>
+//         <Input placeholder="Search" className="changing_size" prefix={<SearchOutlined style={{color:'gainsboro',textIndent:5}}/>}/>
+//         </Col> 
+//         <Col lg={3}>
+      
+//         </Col>
+//         <Col lg={4}>
+//         <Button block>Add Row</Button>
+//         </Col>
+       
+//     </Row>
+//     </Col>
+//     <Col lg={24}>
+     
+//     <Row>
+//         <Col lg={24}>
+//         <Table
+//       columns={columns}
+//       dataSource={dataSource}
+//       style={{ marginTop: 50 ,}}
+//       size="large"
+//     />
+//         </Col>
+//        </Row>
+//        </Col>
+//        </Row>
+//     </>
+//   );
+// };
+// export default Managment;
